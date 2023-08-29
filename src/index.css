@@ -1,0 +1,543 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: #FFFFF0;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+
+button:hover,
+button:focus{
+  transform: scale(1.1);
+}
+
+/*Navbar section */
+
+.nav {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.trestle-link a{
+  color: #0898A0;
+  font-weight: 400;
+}
+
+.trestle-link a:hover{
+  color:#9d8672;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-pages li a{
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+.nav-pages-link[aria-current="page"]{
+  color: #0898A0;
+}
+
+.nav-pages li a:hover {
+  color: #0898A0;
+}
+
+.login-signup{
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-login {
+  color: #0898A0;
+  border: 1px solid #0898A0;
+}
+
+.nav-signup {
+  background-color: #0898A0;
+  color:#FFFFF0;
+  border: none;
+  
+}
+
+.nav-login a,
+.nav-signup a{
+  text-decoration: none;
+  
+}
+
+.nav-login a:visited{
+  color: #0898A0;
+}
+
+.nav-signup a:visited{
+  color:#FFFFF0;
+}
+
+
+
+/* about trestle */
+
+@media only screen and (min-width: 1440px){
+  .about-trestle{
+    display: flex;
+    color: #0898A0;
+  }
+  
+  .about-trestle-writeup h3{
+    margin-top: 28px;
+    margin-bottom: 14px;
+    font-weight: 400;
+  }
+  .about-trestle-writeup{
+    margin-left: 113px;
+    margin-right: 311px;
+  }
+  
+  .about-trestle-writeup p{
+    width: 456px;
+    height: 168px;
+    line-height: 28px;
+    margin-bottom: 14px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .learn-more-button{
+    width: 264px;
+    height: 62px;
+    line-height: 33.6px;
+    color:#FFFFF0;
+    background: #0898A0;
+    border: none;
+  }
+  
+  .about-trestle-img img{
+    width: 413px;
+    height: 323px;
+    margin: 14px 147px 84px 0;
+  }
+  
+}
+
+.about-trestle{
+  color: #0898A0;
+}
+
+
+.about-trestle-writeup p{
+  font-family: "Roboto", sans-serif;
+}
+
+.learn-more-button{
+  color:#FFFFF0;
+  background: #0898A0;
+  border: none;
+}
+
+
+/* home page */
+
+
+.connect-people h1,
+.connect-people h2{
+  color: #0898A0;
+}
+
+.connect-people{
+  background-image: url(./images/hourglass.png);
+}
+
+.home-owner-investor{
+  background: #ADDDDF33;
+}
+
+.home-owner{
+  background: #FFFFF0;
+  color: #31A9B0;
+  border: 1px solid #0898A0;
+}
+
+.home-owner-investor p{
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+.home-investor{
+  background: #0898A0;
+  color: #FFFFF0;
+ 
+}
+
+
+.home-owner-investor button{
+  border: none;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+
+
+
+.home-owner button{
+  background: #0898A0;
+  color: #FFFFF0;
+  
+}
+
+.home-owner button:visited{
+  color: #FFFFF0;
+}
+
+.home-investor button{
+  background: #FFFFF0;
+  color: #0898A0;
+}
+
+.trestle-corner-title{
+  color: #0898A0;
+  font-weight: 400;
+}
+
+
+
+
+.carousel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel p{
+  font-family: "Roboto", sans-serif;
+  color: #0898A0;
+
+}
+
+/* .about-trestle-home{
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+} */
+
+
+
+
+
+/* get in touch */
+
+
+.get-in-touch{
+  color: #0898A0;
+}
+
+.get-in-touch-list p{
+  font-family: "Roboto", sans-serif;
+}
+
+
+
+
+
+/* get started */
+
+.sign-up-div h3{
+  color: #0898A0;
+}
+
+.sign-up-div button{
+  background: #0898A0;
+  color: #FFFFF0;
+}
+
+.sign-up-div a{
+  text-decoration: none;
+}
+
+.sign-up-div a:visited{
+  color: #FFFFF0;
+}
+
+
+/* filter */
+
+
+@media only screen and (min-width: 1440px){
+  
+
+.filter{
+  display: flex;
+  height: 65px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.filter select{
+  width: 193px;
+  height: 65px;
+  color: #0898A0;
+  background: #FFFFF0;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  border: none;
+  margin: 0 22px 0 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+.relevance-div{
+  display: flex;
+}
+
+.relevance-div p{
+  margin-bottom: 24px;
+  width: 113px;
+  height: 58px;
+  font-size: 20px;
+  color: #0898A0;
+  text-align: center;
+  margin-top: 22px;
+}
+
+}
+
+.filter{
+  font-family: 'Roboto', sans-serif;
+}
+
+.filter select{
+  color: #0898A0;
+  background: #FFFFF0;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+
+.relevance-div p{
+  color: #0898A0;
+}
+
+
+/* invest page */
+
+
+.investment-option button{
+  background: #31A9B0;
+  color: #FFFFF0;
+  border: none;
+}
+
+
+/* find-investor */
+
+
+.investor-details li{
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.investor-job{
+  font-weight: 600;
+  color: #584E4E;
+}
+
+.investor-location{
+  color: #584E4E;
+}
+
+
+.investor-status{
+  color: #0898A0;
+  font-weight: 600;
+}
+
+.salary-of-investor{
+  color: #584E4E;
+  font-family: 'Mulish', sans-serif;
+
+}
+
+/* see more form */
+.see-more{
+  font-family: "Roboto", sans-serif;
+
+}
+
+.see-more h3{
+  color: #0898A0;
+}
+
+.see-more p{
+  color: #584E4E;
+}
+
+
+
+.find-investor-form label{
+  color: #0898A0;
+}
+
+
+.find-investor-form button{
+  background: #0898A0;
+  color: #FFFFF0;
+  
+}
+
+
+
+/* footer */
+
+
+@media only screen and (min-width: 1400px){
+
+  .footer h3{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33.6px;
+    margin-bottom: 21px;
+  }
+
+  .footer p{
+    font-weight: 500;
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+
+  .footer ul{
+    display: flex;
+  }
+
+  .footer li{
+    list-style: none;
+  }
+
+  .copyright-terms,
+  .copyright-div,
+  .terms-div{
+    display: flex;
+  }
+
+  .copyright-terms p{
+    font-size: 25px;
+  }
+
+
+}
+
+
+.footer{
+  background: #0898A0;
+  font-family: "Roboto", sans-serif;
+  color: #FFFFF0;
+}
+
+.footer p{
+  font-weight: 500;
+}
+
+.footer li{
+  list-style: none;
+}
+
+
+.copyright-terms p{
+  font-weight: 400;
+}
+
+/* events */
+
+.events-img{
+  background-image: url(./images/events-img.png);
+  background-repeat: no-repeat;
+}
+
+
+.next-event-button{
+  background: #0898A0;
+  color: #FFFFF0;
+}
+
+
+
+.events-info p{
+  font-family: "Roboto", sans-serif;
+  color: #584E4E;
+}
+
+
+
+.get-ticket{
+  background: #0898A0;
+  color: #FFFFF0;
+  font-family: "Roboto", sans-serif;
+}
+
+
+.upcoming-events-button{
+  border: none;
+  background: #0898A0;
+  color: #FFFFF0;
+}
+
+.upcoming-event h4{
+  color: #0898A0;
+}
+
+.upcoming-event p{
+  font-family: "Roboto", sans-serif;
+  color: #746C6C;
+}
+
+.upcoming-event a{
+  color: #0898A0;
+}
+
+.events-date-div p{
+  color: #584E4E;
+  font-family: "Roboto", sans-serif;
+}
+
+.upcoming-event-get-ticket{
+  background: #0898A0;
+  font-family: "Roboto", sans-serif;
+  color: #FFFFF0;
+  border: none;
+}
+
+.invest-signup h4{
+  color: #0898A0;
+  font-weight: 400;
+}
+
+.invest-signup p{
+  font-family: "Roboto", sans-serif;
+  color: #584E4E;
+}
+
+.invest-signup span{
+  color: #0898A0;
+}
+
+.invest-signup button{
+  background: #0898A0;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  color: #FFFFF0;
+}
+
+
+/* application-received-investor */
+
+.application-received-investor{
+    color: #0898A0
+}
+
+
+
