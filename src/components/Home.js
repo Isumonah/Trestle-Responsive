@@ -9,7 +9,7 @@ import AboutTrestle from './AboutTrestle'
 
 export default function Home(){
     return(
-        <div className="home text-[13px] sm:text-[15px] md:text-[17px] lg:text-[20px] xl:text-[24px]" id="home">
+        <div className="home text-[13px] sm:text-[15px] md:text-[17px] lg:text-[20px] xl:text-[20px]" id="home">
             <div className="home-nav">
             <Nav /></div>
             <div className="connect-people h-72 md:h-96 flex flex-col items-center justify-center space-y-4 xl:h-[700px] m-[20px] sm:m-[30px] xl:m-[60px]">
