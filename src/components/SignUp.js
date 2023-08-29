@@ -12,7 +12,7 @@ export default function SignUp() {
             <a href="/" className="text-[18px] sm:text-[20px] md:text-[24px] lg:text-[26px] xl:text-[35px] text-[#0898A0] hover:text-[#9d8672] border-b-2 lg:border-b-4 border-[#0898A0]">TRESTLE</a>
         </h4>
         <div className=" mt-10 text-[#0898A0] ">
-          <h4 className=" text-[16px] sm:text-[18px] md:text-[21px] lg:text-[24px] xl:text-[30px] text-center">Create Account</h4>
+          <h4 className=" text-[16px] sm:text-[18px] md:text-[21px] lg:text-[24px] xl:text-[50px] text-center">Create Account</h4>
            <p className="text-center w-8/12 mx-auto mt-4 font-[Roboto]">Enter your details to begin your journey with us.</p>
            <form className="mt-10  text-center font-[Roboto] w-11/12 md:w-10/12 mx-auto">
               <div className="flex flex-col w-10/12 mx-auto text-left ">
