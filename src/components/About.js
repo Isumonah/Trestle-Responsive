@@ -9,7 +9,7 @@ import Footer from "./Footer"
 
 export default function About(){
     return(
-        <div className="about text-[13px] sm:text-[15px] md:text-[17px] lg:text-[20px] xl:text-[24px]">
+        <div className="about text-[14px] sm:text-[15px] md:text-[17px] lg:text-[20px] xl:text-[22px]">
             <div className="about-nav">
             <Nav /></div>
             <div className="about-img-div shadow">
