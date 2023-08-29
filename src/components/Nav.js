@@ -13,7 +13,7 @@ export default function Nav(){
     return (
       <nav className="nav">
             <div className="w-11/12 lg:w-10/12 mx-auto pt-4 lg:pt-6">
-                <div className="flex justify-between text-[18px] sm:text-[20px] md:text-[24px] lg:text-[26px] xl:text-[35px]">
+                <div className="flex justify-between text-[18px] sm:text-[20px] md:text-[24px] lg:text-[6px] xl:text-[5px]">
                     <h4 className="trestle-link">
                     <a href="/" className="logo border-b-2 lg:border-b-4 border-[#0898A0]">TRESTLE</a>
                     </h4>
