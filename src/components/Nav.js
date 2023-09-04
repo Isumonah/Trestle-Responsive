@@ -35,9 +35,9 @@ export default function Nav(){
                             setNavState(false)
                         }}/>
                     </div>
-                    <ul className={`flex flex-col space-y-2 sm:space-y-0 pl-4 sm:pl-0 sm:pt-0 h-1/2 sm:h-auto sm:flex-row sm:justify-between sm:relative w-full text-[15px] sm:text-[16px] md:text-[20px] lg:text-[24px] xl:text-[27px] text-gray-700 font-bold sm:font-light sm:text-[#908989]`}>
+                    <ul className={`flex flex-col space-y-4 sm:space-y-0 pl-4 pr-2 sm:pl-0 sm:pr-0 sm:pt-0 h-1/2 sm:h-auto sm:flex-row sm:justify-between sm:relative w-full text-[15px] sm:text-[16px] md:text-[20px] lg:text-[24px] xl:text-[27px] text-gray-700 font-bold sm:font-light sm:text-[#908989] uppercase sm:normal-case`}>
                         <li>
-                            <a href="/about" className="about-us nav-pages-link">About Us</a>
+                            <a href="/about" className="about-us nav-pages-link ">About Us</a>
                         </li>
                         <li>
                             <a className="nav-pages-link" href="/invest">Invest</a>
