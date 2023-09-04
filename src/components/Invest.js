@@ -1,13 +1,3 @@
-import fluid from "../images/fluid.png"
-import groStock from "../images/gro-stock.png"
-import jewelry from "../images/jewelry.png"
-import bookConnect from "../images/book-connect.png"
-import paycycle from "../images/paycycle.png"
-import freshFinds from "../images/fresh-finds.png"
-import audioly from "../images/audioly.png"
-import youFeed from "../images/you-feed.png"
-import healthPal from "../images/health-pal.png"
-
 
 import AboutTrestle from "./AboutTrestle"
 import Filter from "./Filter"
@@ -29,17 +19,21 @@ export default function Invest(){
                 </div>
                 <div className="invest-filter mt-6"> <Filter /></div>
                 
-                <div className="investment-options sm:grid grid-cols-2 lg:grid-cols-3 gap-x-6 mx-auto mt-4 pb-4 mb-4 md:mb-20">
+                <div className=" investment-options sm:grid grid-cols-2 lg:grid-cols-3 gap-x-6 mx-auto mt-4 pb-4 mb-4 md:mb-20">
                     {investData.map((item, index) => {
                         return(
-                            <div className="investment-option mt-8 md:mt-16 flex flex-col sm:flex-none sm:mx-0 items-start text-[#0898A0]">
-                                <img className="sm:order-first" src={item.img} alt="image of investment option" />
-                                <h4 className="order-first text-center sm:text-start mb-3 sm:mb-0 sm:mt-3
+                            <div className="investment-option mt-8 md:mt-16 flex justify-center sm:flex-none sm:mx-0 text-[#0898A0]">
+                                <div className="flex flex-col">
+                                <img className=" sm:order-first" src={item.img} alt="image of investment option" />
+                                
+                                    <h4 className="order-first sm:text-start mb-3 sm:mb-0 sm:mt-3
                                 text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px]">{item.title}</h4>
-                                <p className="mt-3 font-[Roboto]">
-                                {item.writeup}<a>...Read more</a>
+                                <p className="max-w-[400px] mt-3 font-[Roboto]">
+                                {item.writeup}...<a className="block opacity-[0.8]">Read more</a>
                                 </p>
-                                <button className=" px-3 py-1 rounded mt-3 ">FUND NOW</button>
+                                <button className=" px-3 py-1 rounded mt-3 self-start">FUND NOW</button>
+                                </div>
+                                
                             </div>
                         )
                         
