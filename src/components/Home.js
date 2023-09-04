@@ -30,7 +30,7 @@ export default function Home(){
     return(
         <div className="home text-[13px] sm:text-[15px] md:text-[17px] lg:text-[20px] xl:text-[20px]" id="home">
             <Nav />
-            <div className="connect-people h-72 md:h-96 flex flex-col items-center justify-center space-y-4 xl:h-[700px] m-[20px] sm:m-[30px] xl:m-[60px]">
+            <div className="connect-people h-72 w-11/12 mx-auto md:h-96 flex flex-col items-center justify-center space-y-4 xl:h-[700px] m-[20px] sm:m-[30px] xl:m-[60px]">
                 <h1 className="text-[20px] sm:text-[22px] md:text-[25px] lg:text-[28px] xl:text-[35px]">TRESTLE</h1>
                 <h2 className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[25px] mt-2 text-center lg:max-w-lg lg:mr-10 xl:mr-[250px] xl:leading-10">Connecting Business Owners with Potential Investors
                 </h2>
@@ -60,9 +60,9 @@ export default function Home(){
                     <div>
                         {HomeCarouselData.map((item, index) => {
                             return (
-                                <div>
+                                <div className="business-mogul adeola flex flex-col lg:flex-row lg:space-x-8 pb-6 ">
                                     <div key={index}
-                                    className={` ${slidePosition === index ? "block" : "hidden" } business-mogul adeola flex flex-col lg:flex-row lg:space-x-8 pb-6 `}>
+                                    className={` ${slidePosition === index ? "block" : "hidden" }`}>
                                         <img className="w-3/4 mx-auto mt-8"
                                         
                                         src={item.img} alt={item.alt} />
@@ -71,7 +71,7 @@ export default function Home(){
                                             <p className="adeola-writeup  mt-2 font-[Roboto]">{item.writeup}</p>
                                         </div>
                                         <div className="carousel">
-                                            <div className="flex space-x-2 mt-3">
+                                            <div className="flex justify-center space-x-2 mt-3 sm:mt-4 md:mt-5 ">
                                                 {HomeCarouselData.map((_, index) => {
                                                     return(
                                                         <button key={index} onClick={() => {
@@ -82,7 +82,7 @@ export default function Home(){
                                                     
                                                 })}
                                             </div>
-                                            <button onClick={nextSlide} className="mt-1 font-[Roboto]" >Read more featured stories > </button>
+                                            <button onClick={nextSlide} className="mt-2 sm:mt-3 font-[Roboto] text-center w-full" >Read more featured stories > </button>
                                         </div>
                                     </div>
                                     

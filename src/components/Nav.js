@@ -29,13 +29,13 @@ export default function Nav(){
                         setNavState(!navState)
                     }} />
                 </div>
-                <nav className={`nav-pages ${navState ? "h-[100vh] left-0 w-1/2 bg-[#D9D9D9]" : "h-0 left-[-100%]"} sm:w-full sm:bg-[#FFFFF0] absolute sm:relative transition-all overflow-hidden sm:mt-2 md:mt-4 sm:h-auto sm:left-0 sm:pb-2`}>
+                <nav className={`nav-pages ${navState ? "h-[100vh] right-0 w-1/2 bg-[#D9D9D9] mt-1" : "h-0 right-[-100%]"} sm:w-full sm:bg-[#FFFFF0] absolute sm:relative transition-all overflow-hidden sm:mt-2 md:mt-4 sm:h-auto sm:left-0 sm:pb-2`}>
                     <div className="flex justify-end mr-4 mt-2">
                         <FaTimes className="h-4 sm:hidden" onClick={() => {
                             setNavState(false)
                         }}/>
                     </div>
-                    <ul className={`flex flex-col justify-between space-y-2 sm:space-y-0 pl-4 sm:pl-0 pt-6 sm:pt-0 h-1/2 sm:h-auto sm:flex-row sm:relative w-full text-[15px] sm:text-[16px] md:text-[20px] lg:text-[24px] xl:text-[27px] text-gray-700 font-bold sm:font-light sm:text-[#908989]`}>
+                    <ul className={`flex flex-col space-y-2 sm:space-y-0 pl-4 sm:pl-0 sm:pt-0 h-1/2 sm:h-auto sm:flex-row sm:justify-between sm:relative w-full text-[15px] sm:text-[16px] md:text-[20px] lg:text-[24px] xl:text-[27px] text-gray-700 font-bold sm:font-light sm:text-[#908989]`}>
                         <li>
                             <a href="/about" className="about-us nav-pages-link">About Us</a>
                         </li>
