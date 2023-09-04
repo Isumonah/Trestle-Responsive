@@ -48,10 +48,9 @@ const investors = [
 export default function FindInvestor(){
     return(
         <div className="find-investor text-[13px] sm:text-[15px] md:text-[17px] lg:text-[20px] xl:text-[24px]" id="find-investor">
-            <div className="find-investor-nav">
-            <Nav /></div>
+            <Nav />
             <div className="flex h-10 md:h-12 search-investor mt-8 text-center border-2 xl:h-16 w-11/12 lg:w-10/12 mx-auto">
-                <input placeholder="Search"  className="search-investor-input w-9/12 border-2 border-teal-600 rounded py-1 px-2 md:px-3 md:py-2 lg:py-3 lg:px-5 xl:h-16 xl:text-lg placeholder:text-gray-400"  />
+                <input placeholder="Search"  className=" w-9/12 border-2 border-teal-600 rounded py-1 px-2 md:px-3 md:py-2 lg:py-3 lg:px-5 xl:h-16 xl:text-lg placeholder:text-gray-400"  />
                 <div className="search-div bg-teal-600 -mx-3 w-1/12 rounded-lg  xl:h-16 flex justify-center items-center">
                     <img  className="h-6 xl:h-8" src={searchIcon} alt="search-icon" />
                 </div>

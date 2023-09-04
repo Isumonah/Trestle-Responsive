@@ -5,8 +5,7 @@ import SuccessStoriesData from "./SuccessStoriesData";
 export default function SuccessStories(){
     return(
         <div id="success-stories">
-            <div className="">
-            <Nav /></div>
+            <Nav />
             <div className="w-11/12 lg:w-10/12 mx-auto my-10 sm:my-14 md:my-16 xl:my-20 text-[13px] sm:text-[15px] md:text-[17px] lg:text-[20px] xl:text-[24px] leading-[18px] md:leading-[22px] xl:leading-[33.6px]">
                 <div>
                     <h3 className="md:mt-14 text-[20px] sm:text-[22px] md:text-[24px] lg:text-[30px] xl:text-[40px] text-[#5ABAC0]">NEW</h3> 

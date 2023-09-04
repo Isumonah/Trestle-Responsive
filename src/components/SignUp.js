@@ -1,13 +1,14 @@
 
 export default function SignUp() {
     return (
-      <div className="h-screen w-11/12 flex items-stretch lg:w-full mx-auto  text-[13px] sm:text-[15px] md:text-[17px] lg:text-[20px] xl:text-[24px]" id="sign-up">
-        <div className="h-screen hidden lg:block lg:[35%] bg-[#0898A0] text-[#FFFFF0] lg:flex lg:flex-col lg:items-center lg:justify-center h-screen">
+      <div className="min-h-screen h-auto
+       w-11/12 flex items-stretch lg:w-full mx-auto  text-[13px] sm:text-[15px] md:text-[17px] lg:text-[20px] xl:text-[24px]" id="sign-up">
+        <div className=" hidden lg:block lg:[35%] bg-[#0898A0] text-[#FFFFF0] lg:flex lg:flex-col lg:items-center lg:justify-center h-auto">
           <div className="opacity-[0.9] lg:text-[26px] xl:text-[35px]">Welcome Back!</div>
           <div className="opacity-[0.9] lg:w-8/12 lg:text-[22px] xl:text-[28px] mt-6">To stay connected with us, kindly login to your personal account.</div>
           <button className="lg:text-[22px] xl:text-[25px] mt-6  text-[#0898A0] bg-[#FFFFF0] rounded px-8 py-1"><a href="/sign-in">Log in</a></button>
         </div>
-        <div className="lg:w-[65%] pt-6 w-full h-screen mb-10">
+        <div className="lg:w-[65%] pt-6 w-full  mb-10">
         <h4 className="pl-6">
             <a href="/" className="text-[18px] sm:text-[20px] md:text-[24px] lg:text-[26px] xl:text-[35px] text-[#0898A0] hover:text-[#9d8672] border-b-2 lg:border-b-4 border-[#0898A0]">TRESTLE</a>
         </h4>

@@ -10,8 +10,7 @@ import Footer from "./Footer"
 export default function About(){
     return(
         <div className="about text-[14px] sm:text-[15px] md:text-[17px] lg:text-[20px] xl:text-[22px]">
-            <div className="about-nav">
-            <Nav /></div>
+            <Nav />
             <div className="about-img-div shadow">
                 <div className="about-img">
                     <img className="w-11/12 lg:w-10/12 mx-auto shadow-2 py-8" src={businessWomen} alt="business-women" />

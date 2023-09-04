@@ -3,15 +3,33 @@ import tolase from "../images/tolase.png"
 import smallCircle from "../images/small-circle.png"
 import smallCircleGreen from "../images/small-circle-green.png"
 
+import HomeCarouselData from "./HomeCarouselData"
+
 import Footer from "./Footer"
 import Nav from "./Nav"
 import AboutTrestle from './AboutTrestle'
+import { useState } from "react";
+import {GiCircle} from "react-icons/gi"
+
+
+  
 
 export default function Home(){
+    const [slidePosition, setSlidePosition] = useState(0)
+    const slideLength = HomeCarouselData.length
+
+    let nextSlide = () => {
+        setSlidePosition(slidePosition === slideLength - 1 ? 0 : slidePosition + 1)
+    }
+
+    // nextSlide()
+
+    
+
+
     return(
         <div className="home text-[13px] sm:text-[15px] md:text-[17px] lg:text-[20px] xl:text-[20px]" id="home">
-            <div className="home-nav">
-            <Nav /></div>
+            <Nav />
             <div className="connect-people h-72 md:h-96 flex flex-col items-center justify-center space-y-4 xl:h-[700px] m-[20px] sm:m-[30px] xl:m-[60px]">
                 <h1 className="text-[20px] sm:text-[22px] md:text-[25px] lg:text-[28px] xl:text-[35px]">TRESTLE</h1>
                 <h2 className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[25px] mt-2 text-center lg:max-w-lg lg:mr-10 xl:mr-[250px] xl:leading-10">Connecting Business Owners with Potential Investors
@@ -39,27 +57,39 @@ export default function Home(){
             <div className="trestle-corner py-10 md:py-12 px-6 sm:px-8 lg:px-12 xl:px-0 bg-[#ADDDDF33] text-[#0898A0]">
                 <div className="xl:w-11/12 xl:mx-auto">
                     <h3 className="trestle-corner-title text-[18px] sm:text-[20px] md:text-[23px] lg:text-[26px] xl:text-[32px] text-center w-full ">TRESTLE CORNER</h3>
-                    <div className="business-mogul adeola flex flex-col lg:flex-row lg:space-x-8 pb-6">
-                        <img className="w-3/4 mx-auto mt-8 order-last xl:order-first" src={adeolaSagoe} alt="picture of Adeola Sagoe" />
-                        <div className="business-mogul-writeup lg:mr-6">
-                            <h3 className="adeola-name text-[17px] sm:text-[19px] md:text-[22px] lg:text-[25px] xl:text-[30px] text-center mt-10">ADEOLA SAGOE</h3>
-                            <p className="adeola-writeup  mt-2 font-[Roboto]">Ms Deola Ade-Ojo is a Nigerian born fashion designer who is popularly known by her design name, Deola Sagoe. she began designing in 1988 when she join her mothers business with a view of expanding the labels repertoire to encompass more contemporary designs for ever-developing cosmopolitan high-brow society. Using Africa hand-woven materials in which she brought out life a range of distinct cultures; and contemporizing almost-lost traditional African techniques, Deola is well known for her uncanny attention to detail, her expert handling of diverse range of fabrics as well as her exemplary grasp of a wide range of female body types. She is celebrated back home for patriotism and zeal in Nigerian culture at large. </p>
-                        </div>
-                    </div>
-                    <div className="business-mogul tolase business-mogul adeola flex flex-col lg:flex-row lg:space-x-8">
-                        <div className="business-mogul-writeup">
-                            <h3 className="tolase-name text-[17px] sm:text-[19px] md:text-[22px] lg:text-[25px] xl:text-[30px] text-center mt-16">TOLASE OLULEYE (NIG)</h3>
-                            <p className="tolase-writeup mt-4 font-[Roboto]">Meet Tolase our super biz of the month. Tolase is a graduate of economics from University of Ibadan, she holds a masters degree in Business Administration from Lagos Business school. After graduation Tolase wanted more for her life and she decided to start selling fabric but due to lack of fund Tolase could not expand as much as she wanted, she came across trestle and she pitched her idea and fortunately she finally found an investor and that is the beginning of her turn about within few months Tolase has sold more than 1million fabric across Africa. Tolase is our super star and we are proud of her success.
-                            </p>
-                        </div>
-                            <img className="w-3/4 mx-auto mt-8 order-last " src={tolase} alt="picture of Tolase Oluleye" />
-                    </div>
-                    <div className="carousel">   <div className="carousel-btns flex mt-12 space-x-3">
-                            <img src={smallCircleGreen} />
-                            <img src={smallCircle} />
-                            <img src={smallCircle} />
-                    </div>
-                    <p className="mt-3">Read more featured stories  > </p>
+                    <div>
+                        {HomeCarouselData.map((item, index) => {
+                            return (
+                                <div>
+                                    <div key={index}
+                                    className={` ${slidePosition === index ? "block" : "hidden" } business-mogul adeola flex flex-col lg:flex-row lg:space-x-8 pb-6 `}>
+                                        <img className="w-3/4 mx-auto mt-8"
+                                        
+                                        src={item.img} alt={item.alt} />
+                                        <div className="business-mogul-writeup lg:mr-6">
+                                            <h3 className="adeola-name text-[17px] sm:text-[19px] md:text-[22px] lg:text-[25px] xl:text-[30px] text-center mt-10">{item.name}</h3>
+                                            <p className="adeola-writeup  mt-2 font-[Roboto]">{item.writeup}</p>
+                                        </div>
+                                        <div className="carousel">
+                                            <div className="flex space-x-2 mt-3">
+                                                {HomeCarouselData.map((_, index) => {
+                                                    return(
+                                                        <button key={index} onClick={() => {
+                                                            setSlidePosition(index)
+                                                            
+                                                        }} className={`${slidePosition === index ? "bg-teal-600" : "bg-white"} rounded-full h-4 w-4 border border-teal-600`}></button>
+                                                    )
+                                                    
+                                                })}
+                                            </div>
+                                            <button onClick={nextSlide} className="mt-1 font-[Roboto]" >Read more featured stories > </button>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            )
+                        })} 
                     </div>
                 </div>
             </div>

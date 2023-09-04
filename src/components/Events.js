@@ -6,9 +6,7 @@ import Footer from "./Footer";
 export default function Events(){
     return(
         <div className="events text-[13px] sm:text-[15px] md:text-[17px] lg:text-[20px] xl:text-[24px]" id="event">
-            <div className="events-nav">
-                <Nav />
-           </div>
+            <Nav />
            <div className="events-img bg-cover h-64 sm:h-96 md:h-[700px] flex justify-center items-center text-center border-2">
                 <div className="events-info py-3 bg-[#FFFFF0] bg-opacity-[0.6] sm:p-6 md:p-12 rounded">
                     <button className="next-event-button mx-auto text-[14px] sm:text-[18px] px-3 md:text-[22px] lg:text-[25px] lg:py-1 rounded">Next Event</button>
