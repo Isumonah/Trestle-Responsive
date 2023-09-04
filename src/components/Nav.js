@@ -17,10 +17,10 @@ export default function Nav(){
 
     return (
       <header className="nav sticky top-0 left-0 bg-[#FFFFF0] z-[99]">
-            <div className="w-11/12 lg:w-10/12 mx-auto pt-1 sm:pt-3 lg:pt-6">
-                <div className="flex justify-between items-center text-[18px] sm:text-[20px] md:text-[24px] lg:text-[28px] xl:text-[35px]">
+            <div className="w-11/12 lg:w-10/12 mx-auto py-1 sm:py-2 lg:py-4">
+                <div className="flex justify-between items-center ">
                     <h4 className="trestle-link">
-                    <a href="/" className="logo border-b-2 lg:border-b-4 border-[#0898A0]">TRESTLE</a>
+                    <a href="/" className="logo border-b-2 lg:border-b-4 border-[#0898A0] text-[18px] sm:text-[20px] md:text-[24px] lg:text-[28px] xl:text-[35px]">TRESTLE</a>
                     </h4>
                     <div  className="login-signup text-[13px] sm:text-[17px] md:text-[19px] lg:text-[22px] xl:text-[24px]"><button className="nav-login rounded py-[2px] p-1"><a href="sign-in">LOG IN</a></button>
                     <button className="nav-signup py-[2px] rounded ml-2 lg:ml-4 p-1"><a href="sign-up">SIGN UP</a></button>
