@@ -11,7 +11,7 @@ export default function Invest(){
         <div className="invest" id="invest">
             <Nav />
             <div className=" w-11/12 lg:w-10/12 mx-auto text-[13px] sm:text-[15px] md:text-[17px] lg:text-[20px] xl:text-[24px]">
-                <div className="invest-heading flex mt-8 xl:mt-12 justify-between text-[17px] sm:text-[19px] md:text-[21px] lg:text-[23px] xl:text-[25px]">
+                <div className="invest-heading flex mt-8 xl:mt-12 justify-between text-[14px] sm:text-[17px] md:text-[19px] lg:text-[21px] xl:text-[24px]">
                     <h1 className="md:mb-16 text-[#31A9B0]">Investment Opportunities</h1>
                     <button className="funded-portfolio text-s px-1 sm:py-1 self-start border-[#0898A0] border">
                         <a href="" className="text-[#0898A0]">Funded Portfolio</a>
